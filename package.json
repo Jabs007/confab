@@ -1,0 +1,32 @@
+{
+  "name": "karto-ecommerce",
+  "version": "1.0.0",
+  "description": "Karto - A modern, responsive HTML template for furniture and home decor e-commerce websites.",
+  "main": "karto/index.html",
+  "scripts": {
+    "start": "npx http-server karto -p 8000 -o",
+    "dev": "npx http-server karto -p 8000 -o -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jabs007/confab.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "template",
+    "html",
+    "css",
+    "bootstrap",
+    "furniture",
+    "shopping-cart",
+    "responsive",
+    "website-template"
+  ],
+  "author": "Adams Jabali <adamsjabali9@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jabs007/confab/issues"
+  },
+  "homepage": "https://github.com/Jabs007/confab#readme"
+}
