@@ -6,6 +6,10 @@
   "scripts": {
     "start": "npx http-server karto -p 8000 -o",
     "dev": "npx http-server karto -p 8000 -o -c-1",
+    "lint": "eslint karto/**/*.js",
+    "lint:fix": "eslint karto/**/*.js --fix",
+    "format": "prettier --write \"karto/**/*.{html,css,js,json}\"",
+    "format:check": "prettier --check \"karto/**/*.{html,css,js,json}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,5 +32,11 @@
   "bugs": {
     "url": "https://github.com/Jabs007/confab/issues"
   },
-  "homepage": "https://github.com/Jabs007/confab#readme"
+  "homepage": "https://github.com/Jabs007/confab#readme",
+  "devDependencies": {
+    "eslint": "^9.39.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-html": "^8.1.3",
+    "prettier": "^3.7.4"
+  }
 }
