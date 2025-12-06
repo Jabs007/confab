@@ -1,0 +1,131 @@
+/* Cart Notification Animations */
+@keyframes slideInRight {
+  from {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+}
+
+/* Cart Counter Badge */
+.cart-counter,
+.number {
+  display: inline-block;
+  background: #ff0000;
+  color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 11px;
+  font-weight: bold;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+/* Add to Cart Button Styles */
+.add-to-cart-btn {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.add-to-cart-btn:active {
+  transform: translateY(0);
+}
+
+/* Empty Cart State */
+.empty-cart {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.empty-cart i {
+  font-size: 48px;
+  color: #ddd;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.empty-cart p {
+  color: #999;
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Cart Item Remove Button */
+.remove-cart-item {
+  background: none;
+  border: none;
+  color: #ff0000;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  transition: all 0.2s ease;
+}
+
+.remove-cart-item:hover {
+  color: #cc0000;
+  transform: scale(1.2);
+}
+
+/* Free Shipping Progress */
+.shipping-progress {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.shipping-progress.eligible {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.shipping-progress.not-eligible {
+  background: #f0f8ff;
+  color: #1976d2;
+}
+
+/* Cart Dropdown Enhancement */
+.cart-box {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.cart-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cart-box::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.cart-box::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.cart-box::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
